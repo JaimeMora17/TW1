@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 2rem;
-    color:#14580e;
+    color:#f8f8f8;
 }
 
 h2 {
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color:#8A6694;
+    background-color:#050505;
     color: whitesmoke;
 }
 
@@ -43,4 +43,5 @@ header img {
 footer {
     font-size: 0.75rem;
 }
+
 
