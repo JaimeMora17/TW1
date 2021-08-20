@@ -1,0 +1,218 @@
+* {
+	padding: 0;
+	margin: 0;	
+	box-sizing: border-box;
+}
+h1{
+    color:#000;
+    
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #000 url('/proy/imagenes/bolivia-bandera-de-humo-p3ghax.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+    
+}
+div.logo{
+    background: url('/proy/imagenes/descarga.png');
+}
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header {
+	width: 100%;
+	padding: 50px 0;
+
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+	margin: 10px;
+	background: rgba(74, 196, 226, 0.329);
+}
+
+header .menu a {
+	color: rgb(12, 11, 11);
+	text-decoration: none;
+	margin-right:40px;
+	font-size: 18px;
+    font: weight 400px;
+}
+
+header .menu a:hover {text-decoration: underline;}
+
+.main {
+	background: #fff;
+	padding: 20px;
+	width: 70%;
+}
+
+.main article .thumb {
+	margin-bottom: 20px;
+}
+
+.main article .thumb img {
+	vertical-align: top;
+	width: 100%;
+}
+
+.main article h2 {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.main article p {
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 27px;
+}
+
+
+aside {
+	width: 30%;
+	background:#ccc;
+	padding: 20px;
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+aside .ad {
+	font-size: 30px;
+	text-align: center;
+	color: rgb(7, 7, 7);
+	padding: 50px 0;
+	/*margin: 20px 0;*/
+	background: #e90d05;
+}
+.ad1{
+	font-size: 30px;
+	text-align: center;
+	color: rgb(2, 2, 2);
+	padding: 50px 0;
+	background: #f7ea3c;
+}
+.ad2{
+	font-size: 30px;
+	text-align: center;
+	color: rgb(8, 8, 8);
+	padding: 50px 0;
+	background: #0baf05;
+}
+
+footer {
+	margin-top: 20px;
+	background: rgba(93, 169, 255, 0.733);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction:row;
+	/*flex-wrap:no-wrap;*/
+	justify-content:space-between;
+}
+
+footer .redes-sociales a {
+	color: #fff;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}
+.responsive li {
+	display: block;
+}
+
+
+@media screen and (max-width: 800px)
+{
+	
+
+	.menu a:first-child {
+		display: none;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.menu a:first-child
+    {
+        display: inline-block;
+    }
+	.menu a
+    {
+        display: none;
+    }
+
+	.responsive a
+    {
+        display:inline-block;;
+    }
+	header {
+		flex-direction:column;
+		padding-bottom: 20px; 
+	}
+
+	header .menu {
+		width: 100%;
+		background: rgba(65, 207, 250, 0.808);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+
+	header .menu a {
+		margin:0 20px; 
+	}
+
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .autor {
+		order:2;
+	}
+
+	footer .redes-sociales {
+		order:1;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	aside {
+		display: none;
+	}
+}
